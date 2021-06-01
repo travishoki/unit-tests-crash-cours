@@ -2,13 +2,13 @@ import { ComponentA } from './ComponentA';
 import { shallow } from 'enzyme';
 
 describe('ComponentA render', () => {
-  it('ComponentA render - null', () => {
+  it('ComponentA render - empty render', () => {
     const wrapper = shallow(<ComponentA />);
 
     expect(wrapper.isEmptyRender()).toEqual(true);
   });
 
-  it('ComponentA render - success', () => {
+  it('ComponentA render - successfully render', () => {
     const props = {
       isVisible: true,
     };
