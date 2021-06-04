@@ -12,3 +12,9 @@ src/utils/
 
 ## Example 3: Component Render Test
 - Check for isEmptyRender
+
+## Example 4: Testable Pure Function
+- Filter out siths from characters 
+- Use a testable pure function to filter
+- Fix the failed unit test 
+

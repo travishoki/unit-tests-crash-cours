@@ -2,7 +2,7 @@ import { filterOutTypeSith } from './ComponentA.helpers';
 
 /*
 Task:
-- Write the expected result for filterOutTypeSith
+- Fix the failed unit test 
 */
 describe('filterOutTypeSith', () => {
   it('filterOutTypeSith', () => {
