@@ -18,3 +18,5 @@ src/utils/
 - Use a testable pure function to filter
 - Fix the failed unit test 
 
+## Example 6: Full line coverage
+- Add the tests for full line coverage
