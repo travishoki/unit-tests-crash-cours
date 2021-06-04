@@ -10,8 +10,6 @@ Task:
 */
 
 export const ComponentA = () => {
-  if (!isVisible) return null;
-
   return CHARACTER_LIST
     // .filter(item => item.type !== TYPES.SITH)
     .map((item) => (
