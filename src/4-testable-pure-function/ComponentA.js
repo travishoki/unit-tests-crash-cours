@@ -5,7 +5,7 @@ import { CHARACTER_LIST, TYPES } from './constants';
 
 /*
 Task:
-- Filter out siths from characters 
+- Filter out siths from characters array
 - Use a testable pure function to filter 
 */
 export const ComponentA = () => {

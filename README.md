@@ -1,25 +1,35 @@
 # Unit Tests Crash Course
 
-npm run test
-Press p to filter by a filename regex pattern.
-src/utils/
+--- 
 
-## Example 1: Basic Test
+## Instructions:
+1. Install
+`npm i`
+2. Jest Tests
+`npm test`
+3. Press p to filter by a filename regex pattern
+4. Begin typing the component name `src/1`
+
+--- 
+
+## Exercises:
+
+### 1-pure-function:
 - Fix the failed unit test 
 
-## Example 2: Check Props Test
+### 2-pure-funciton-props:
 - Throw error for undefined props
 
-## Example 3: Component Render Test
+### 3-component-render-test:
 - Check for isEmptyRender
 
-## Example 4: Testable Pure Function
-- Filter out siths from characters 
+### 4-testable-pure-function
+- Filter out siths from characters array
 - Use a testable pure function to filter
 - Fix the failed unit test 
 
-## Example 5: Simulate Click event
+### 5-sinon-simulate-click:
 - Fix the failed unit tests
 
-## Example 6: Full line coverage
+### 6-full-line-coverage:
 - Add the tests for full line coverage
