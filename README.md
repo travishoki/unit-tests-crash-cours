@@ -19,7 +19,7 @@ src/utils/
 - Fix the failed unit test 
 
 ## Example 5: Simulate Click event
-- Fix the failed unit test 
+- Fix the failed unit tests
 
 ## Example 6: Full line coverage
 - Add the tests for full line coverage
