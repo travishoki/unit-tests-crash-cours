@@ -19,7 +19,7 @@ describe('ComponentA render', () => {
     submitButton.simulate('click');
 
     expect(submitButton).toHaveLength(2);
-    expect(wrapper.isEmptyRender()).toEqual(true);
+    expect(wrapper.isEmptyRender()).toBe(true);
     expect(handleClickSpy.called).toBe(true);
     expect(handleClickSpy.calledWith('bar')).toBe(true);
   });
