@@ -4,7 +4,7 @@ import { sum } from './numbers';
 Task:
 - Throw error for undefined props
 */
-describe('sum', () => {
+describe('numbers - sum', () => {
   it('sum - undefined prop', () => {
     expect(sum).toThrow('num1 undefined');
   });

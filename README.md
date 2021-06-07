@@ -6,7 +6,7 @@
 1. Install
 `npm i`
 2. Jest Tests
-`npm test`
+`npm run test`
 3. Press p to filter by a filename regex pattern
 4. Begin typing the component name `src/1`
 
@@ -32,4 +32,8 @@
 - Fix the failed unit tests
 
 ### 6-full-line-coverage:
+1. Stop running tests
+`ctrl + c`
+2. Re-run tests with coverage
+`npm run test:coverage`
 - Add the tests for full line coverage
