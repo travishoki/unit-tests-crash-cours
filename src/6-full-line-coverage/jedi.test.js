@@ -6,14 +6,12 @@ Task:
 - Add the tests for full line coverage
 */
 describe('getSaberColor', () => {
-  /*
   it('getSaberColor - isJedi undefined', () => {
     const result = getSaberColor();
     const expectedResult = undefined;
 
     expect(result).toEqual(expectedResult);
   });
-  */
 
   /*
   it('getSaberColor - isJedi true', () => {
