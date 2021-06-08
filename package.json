@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "test": "react-scripts test",
-    "test:coverage": "npm test -- --coverage"
+    "coverage": "react-scripts test --coverage"
   },
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.10",
