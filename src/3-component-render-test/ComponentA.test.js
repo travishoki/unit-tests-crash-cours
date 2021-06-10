@@ -27,7 +27,7 @@ describe('ComponentA', () => {
     };
     const wrapper = shallow(<ComponentA {...props} />);
 
-    expect(wrapper.find('p')).toHaveLength(1);
-    expect(wrapper.find('p').text()).toEqual('Component A');
+    expect(wrapper.find('p')).toHaveLength(2);
+    expect(wrapper.find('p').text()).toEqual('Component B');
   });
 });
