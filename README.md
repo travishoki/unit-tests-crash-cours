@@ -40,16 +40,42 @@
 
 --- 
 
-## Links:
+## Package Links:
 
 ## Jest
 https://www.npmjs.com/package/jest
 Delightful JavaScript Testing
 
+## Jest - Expect
+https://jestjs.io/docs/expect
+When you're writing tests, you often need to check that values meet certain conditions. expect gives you access to a number of "matchers" that let you validate different things.
+
 ### Enzyme:
 https://www.npmjs.com/package/enzyme
 Enzyme is a JavaScript Testing utility for React that makes it easier to test your React Components' output. You can also manipulate, traverse, and in some ways simulate runtime given the output.
 
+### Enzyme - Shallow Rendering API
+https://github.com/enzymejs/enzyme/blob/HEAD/docs/api/shallow.md
+Shallow rendering is useful to constrain yourself to testing a component as a unit, and to ensure that your tests aren't indirectly asserting on behavior of child components.
+
 ### Sinon:
 https://www.npmjs.com/package/sinon
 Standalone and test framework agnostic JavaScript test spies, stubs and mocks
+
+--- 
+
+## Notes:
+
+###  Awesome Jest Tip: Coverage Report
+https://dev.to/stevescruz/awesome-jest-tip-coverage-report-h5j
+
+File      | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s
+----------|---------|----------|---------|---------|-------------------
+All files |       0 |        0 |       0 |       0 |
+----------|---------|----------|---------|---------|-------------------
+
+- **Stmts**: represent instructions that have been executed at least once during the unit tests. For example, we can have a line that contains two statements: `var age= 18; console.log(age)` this contains a variable declaration statement and a statement that executes the log function that belongs to the console object.
+- **Branch**: represent if statements which conditions have been fulfilled at least once during the unit tests.
+- **Funcs**: represent functions that have been called at least once during the unit tests.
+- **Lines**: represent code lines that have executed at least once during the unit tests.
+
