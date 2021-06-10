@@ -6,7 +6,7 @@ Task:
 - Check for isEmptyRender
 */
 describe('ComponentA render', () => {
-  it('ComponentA render - happy path render', () => {
+  it('Should render component successfully', () => {
     const props = {
       isVisible: true,
     };
@@ -15,7 +15,7 @@ describe('ComponentA render', () => {
     expect(wrapper.isEmptyRender()).toBe();
   });
 
-  it('ComponentA render - empty render', () => {
+  it('Should render empty', () => {
     const wrapper = shallow(<ComponentA />);
 
     expect(wrapper.isEmptyRender()).toBe();
