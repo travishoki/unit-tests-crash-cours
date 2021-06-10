@@ -4,7 +4,7 @@ import { filterOutTypeSith } from './ComponentA.helpers';
 Task:
 - Fix the failed unit test 
 */
-describe('filterOutTypeSith', () => {
+describe('ComponentA helpers', () => {
   it('filterOutTypeSith', () => {
     const list = [
       {

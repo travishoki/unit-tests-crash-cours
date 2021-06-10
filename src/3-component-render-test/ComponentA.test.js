@@ -5,7 +5,7 @@ import { shallow } from 'enzyme';
 Task:
 - Check for isEmptyRender
 */
-describe('ComponentA render', () => {
+describe('ComponentA', () => {
   it('Should render component successfully', () => {
     const props = {
       isVisible: true,
