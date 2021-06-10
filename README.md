@@ -37,3 +37,19 @@
 2. Re-run tests with coverage
 `npm run test:coverage`
 - Add the tests for full line coverage
+
+--- 
+
+## Links:
+
+## Jest
+https://www.npmjs.com/package/jest
+Delightful JavaScript Testing
+
+### Enzyme:
+https://www.npmjs.com/package/enzyme
+Enzyme is a JavaScript Testing utility for React that makes it easier to test your React Components' output. You can also manipulate, traverse, and in some ways simulate runtime given the output.
+
+### Sinon:
+https://www.npmjs.com/package/sinon
+Standalone and test framework agnostic JavaScript test spies, stubs and mocks
