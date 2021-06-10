@@ -5,7 +5,7 @@ Task:
 - Throw error for undefined props
 */
 describe('numbers - sum', () => {
-  it('sum - undefined prop', () => {
+  it('sum - undefined props', () => {
     expect(sum).toThrow('num1 undefined');
   });
 
