@@ -22,7 +22,7 @@
 - Throw error for undefined props
 
 ### 3-component-render-test:
-- Check for isEmptyRender
+- Fix the failed unit test
 
 ### 4-snapshots-and-tdd
 - Filter out siths from characters array
