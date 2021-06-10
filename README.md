@@ -1,7 +1,8 @@
 # Unit Tests Crash Course
 
 ![Clumsy infomercial gif](https://i.pinimg.com/originals/f8/cc/8f/f8cc8fefcd977a03aabd0a374fb9969f.gif)
-Lots of clumsy mistakes in this code, lets fix them up!
+
+Lots of clumsy mistakes in this code, let's fix them up!
 --- 
 
 ## Instructions:
