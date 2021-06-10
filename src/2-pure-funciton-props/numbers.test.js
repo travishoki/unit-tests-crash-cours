@@ -6,11 +6,11 @@ Task:
 */
 describe('numbers - sum', () => {
   it('sum - undefined props', () => {
-    expect(sum).toThrow('num1 undefined');
+    expect(sum).toThrow('num1 prop undefined');
   });
 
   it('sum - undefined prop num2', () => {
     const num1 = 1;
-    expect(() => sum(num1)).toThrow('num2 undefined');
+    expect(() => sum(num1)).toThrow('num2 prop undefined');
   });
 });
