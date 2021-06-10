@@ -11,8 +11,8 @@ Lots of clumsy mistakes in this code, let's fix them up!
 `npm i`
 2. Jest Tests
 `npm run test`
-3. Press p to filter by a filename regex pattern
-4. Begin typing the component name `src/1`
+3. Press `p` to filter by a filename regex pattern
+4. Begin typing the component name: `src/1`
 5. Arrow down to the section "Pattern matches 1 file", hit enter on the desired file
 
 --- 
