@@ -9,6 +9,7 @@
 `npm run test`
 3. Press p to filter by a filename regex pattern
 4. Begin typing the component name `src/1`
+5. Arrow down to the section "Pattern matches 1 file", hit enter on the desired component
 
 --- 
 
@@ -58,6 +59,10 @@ Enzyme is a JavaScript Testing utility for React that makes it easier to test yo
 https://github.com/enzymejs/enzyme/blob/HEAD/docs/api/shallow.md
 Shallow rendering is useful to constrain yourself to testing a component as a unit, and to ensure that your tests aren't indirectly asserting on behavior of child components.
 
+## Enzyme - enzyme-to-json
+https://www.npmjs.com/package/enzyme-to-json
+Convert Enzyme wrappers to a format compatible with Jest snapshot testing.
+
 ### Sinon:
 https://www.npmjs.com/package/sinon
 Standalone and test framework agnostic JavaScript test spies, stubs and mocks
@@ -74,8 +79,8 @@ File      | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s
 All files |       0 |        0 |       0 |       0 |
 ----------|---------|----------|---------|---------|-------------------
 
-- **Stmts**: represent instructions that have been executed at least once during the unit tests. For example, we can have a line that contains two statements: `var age= 18; console.log(age)` this contains a variable declaration statement and a statement that executes the log function that belongs to the console object.
-- **Branch**: represent if statements which conditions have been fulfilled at least once during the unit tests.
-- **Funcs**: represent functions that have been called at least once during the unit tests.
-- **Lines**: represent code lines that have executed at least once during the unit tests.
+- **Stmts**: instructions that have been executed at least once during the unit tests. For example, we can have a line that contains two statements: `var age= 18; console.log(age)` this contains a variable declaration statement and a statement that executes the log function that belongs to the console object.
+- **Branch**: if statements which conditions have been fulfilled at least once during the unit tests.
+- **Funcs**: functions that have been called at least once during the unit tests.
+- **Lines**: code lines that have executed at least once during the unit tests.
 
