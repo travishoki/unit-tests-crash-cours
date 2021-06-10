@@ -1,5 +1,7 @@
 # Unit Tests Crash Course
 
+![Clumsy infomercial gif](https://i.pinimg.com/originals/f8/cc/8f/f8cc8fefcd977a03aabd0a374fb9969f.gif)
+Lots of clumsy mistakes in this code, lets fix them up!
 --- 
 
 ## Instructions:
@@ -9,7 +11,7 @@
 `npm run test`
 3. Press p to filter by a filename regex pattern
 4. Begin typing the component name `src/1`
-5. Arrow down to the section "Pattern matches 1 file", hit enter on the desired component
+5. Arrow down to the section "Pattern matches 1 file", hit enter on the desired file
 
 --- 
 
