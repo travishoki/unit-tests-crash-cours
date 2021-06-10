@@ -7,7 +7,7 @@ Task:
 */
 describe('getSaberColor', () => {
   /*
-  it('getSaberColor - isJedi undefined', () => {
+  it('Should return undefined if isJedi prop is not a boolean', () => {
     const result = getSaberColor();
     const expectedResult = undefined;
 
@@ -16,7 +16,7 @@ describe('getSaberColor', () => {
   */
 
   /*
-  it('getSaberColor - isJedi true', () => {
+  it('Should return COLORS.GREEN if isJedi prop is true', () => {
     const isJedi = true;
     const result = getSaberColor(isJedi);
     const expectedResult = COLORS.GREEN;
@@ -26,7 +26,7 @@ describe('getSaberColor', () => {
   */
 
   /*
-  it('getSaberColor - isJedi false', () => {
+  it('Should return COLORS.RED if isJedi prop is false', () => {
     const isJedi = false;
     const result = getSaberColor(isJedi);
     const expectedResult = COLORS.RED;
