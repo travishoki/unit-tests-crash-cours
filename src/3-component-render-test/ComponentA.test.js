@@ -12,12 +12,12 @@ describe('ComponentA render', () => {
     };
     const wrapper = shallow(<ComponentA {...props} />);
 
-    expect(wrapper.isEmptyRender()).toBe(undefined);
+    expect(wrapper.isEmptyRender()).toBe();
   });
 
   it('ComponentA render - empty render', () => {
     const wrapper = shallow(<ComponentA />);
 
-    expect(wrapper.isEmptyRender()).toBe(undefined);
+    expect(wrapper.isEmptyRender()).toBe();
   });
 });
