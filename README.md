@@ -24,7 +24,7 @@
 ### 3-component-render-test:
 - Check for isEmptyRender
 
-### 4-testable-pure-function
+### 4-snapshots-and-tdd
 - Filter out siths from characters array
 - Use a testable pure function to filter
 - Fix the failed unit test 
