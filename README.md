@@ -9,11 +9,13 @@ Lots of clumsy mistakes in this code, let's fix them up!
 ## Instructions:
 1. Install
 `npm i`
-2. Jest Tests
+2. Switch to Node 10
+`nvm use`
+3. Jest Tests
 `npm run test`
-3. Press `p` to filter by a filename regex pattern
-4. Begin typing the component name: `src/1`
-5. Arrow down to the section "Pattern matches 1 file", hit enter on the desired file
+4. Press `p` to filter by a filename regex pattern
+5. Begin typing the component name: `src/1`
+6. Arrow down to the section "Pattern matches 1 file", hit enter on the desired file
 
 --- 
 
