@@ -7,7 +7,7 @@ Lots of clumsy mistakes in this code, let's fix them up!
 --- 
 
 ## Instructions:
-1. Switch to Node 10
+1. Switch to Node 10+
 `nvm use`
 2. Install
 `npm i`
