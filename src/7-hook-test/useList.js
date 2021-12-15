@@ -1,9 +1,24 @@
+import { useState } from "react";
 import useQueryCharacters from "./useQueryCharacters";
 
 const useList = () => {
-  const list = useQueryCharacters();
+  const initiList = useQueryCharacters();
+  const [list, setList] = useState(initiList);
 
-  return list.length;
+  const addToList = (item) => {
+    setList([...list, item]);
+  };
+
+  const deleteToList = (itemToDelete) => {
+    const newList = list.filter((item) => item !== itemToDelete);
+    setList(newList);
+  };
+
+  return {
+    addToList,
+    deleteToList,
+    list,
+  };
 };
 
 export default useList;

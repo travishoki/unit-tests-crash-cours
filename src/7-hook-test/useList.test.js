@@ -1,26 +1,12 @@
 import { renderHook } from "@testing-library/react-hooks";
+import TestRenderer from "react-test-renderer";
 
 import useList from "./useList";
 import useQueryCharacters from "./useQueryCharacters";
 
 jest.mock("./useQueryCharacters");
 
-const mockList = [
-  "Mario",
-  "Donkey Kong",
-  "Link",
-  "Samus",
-  "Yoshi",
-  "Kirby",
-  "Fox",
-  "Pikachu",
-  "Luigi",
-  "Ness",
-  "Captain Falcon",
-  "Jigglypuff",
-  "Peach",
-  "Bowser",
-];
+const mockList = ["Mario", "Yoshi"];
 
 /*
 Task:
@@ -29,10 +15,27 @@ Task:
 describe("useList", () => {
   it("useList", () => {
     useQueryCharacters.mockReturnValue(mockList);
+    let hookResult;
 
-    const result = renderHook(() => useList()).result.current;
-    const expectedResult = mockList.length;
+    // renderHook
+    TestRenderer.act(() => {
+      hookResult = renderHook(() => useList());
+    });
 
-    expect(result).toEqual(expectedResult);
+    expect(hookResult.result.current.list).toEqual(mockList);
+
+    // addToList
+    TestRenderer.act(() => {
+      hookResult.result.current.addToList("Luigi");
+    });
+
+    expect(hookResult.result.current.list.includes("Luigi")).toBe(true);
+
+    // deleteToList
+    TestRenderer.act(() => {
+      hookResult.result.current.deleteToList("Bowser");
+    });
+
+    expect(hookResult.result.current.list.includes("Bowser")).toBe(false);
   });
 });
