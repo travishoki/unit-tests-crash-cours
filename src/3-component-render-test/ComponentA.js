@@ -1,14 +1,10 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react";
+import PropTypes from "prop-types";
 
-export const ComponentA = ({
-  isVisible,
-}) => {
+export const ComponentA = ({ isVisible }) => {
   if (!isVisible) return null;
 
-  return (
-    <p>Component A</p>
-  );
+  return <p>Component A</p>;
 };
 
 ComponentA.propTypes = {

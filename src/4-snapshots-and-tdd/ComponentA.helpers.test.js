@@ -1,24 +1,23 @@
-import { filterOutTypeSith } from './ComponentA.helpers';
+import { filterOutTypeSith } from "./ComponentA.helpers";
 
 /*
 Task:
 - Fix the failed unit test 
 */
-describe('ComponentA helpers', () => {
-  it('filterOutTypeSith', () => {
+describe("ComponentA helpers", () => {
+  it("filterOutTypeSith", () => {
     const list = [
       {
-        name: 'Darth Vader',
-        type: 'sith',
+        name: "Darth Vader",
+        type: "sith",
       },
       {
-        name: 'Luke Skywalker',
-        type: 'jedi',
+        name: "Luke Skywalker",
+        type: "jedi",
       },
     ];
     const result = list.filter(filterOutTypeSith);
-    const expectedResult = [
-    ];
+    const expectedResult = [];
 
     expect(result).toEqual(expectedResult);
   });
