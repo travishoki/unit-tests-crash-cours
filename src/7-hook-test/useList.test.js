@@ -13,15 +13,15 @@ Task:
 - Fix the failed unit test
 */
 describe("useList", () => {
+  useQueryCharacters.mockReturnValue(mockList);
+  let hookResult;
+
+  // renderHook
+  TestRenderer.act(() => {
+    hookResult = renderHook(() => useList());
+  });
+
   it("useList", () => {
-    useQueryCharacters.mockReturnValue(mockList);
-    let hookResult;
-
-    // renderHook
-    TestRenderer.act(() => {
-      hookResult = renderHook(() => useList());
-    });
-
     expect(hookResult.result.current.list).toEqual(mockList);
 
     // addToList
