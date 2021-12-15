@@ -44,7 +44,12 @@ Lots of clumsy mistakes in this code, let's fix them up!
 
 - Fix the failed unit tests
 
-### 6-full-line-coverage:
+### 6-hook-test:
+
+- Fix the failed unit test
+- Add tests for hook functions
+
+### 7-full-line-coverage:
 
 1. Stop running tests
    `ctrl + c`
