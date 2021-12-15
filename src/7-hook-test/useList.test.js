@@ -17,9 +17,7 @@ describe("useList", () => {
   let hookResult;
 
   // renderHook
-  TestRenderer.act(() => {
-    hookResult = renderHook(() => useList());
-  });
+  hookResult = renderHook(() => useList());
 
   it("useList", () => {
     expect(hookResult.result.current.list).toEqual(mockList);
