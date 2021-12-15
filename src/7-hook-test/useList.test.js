@@ -20,6 +20,7 @@ describe("useList", () => {
   hookResult = renderHook(() => useList());
 
   it("useList", () => {
+    // list
     expect(hookResult.result.current.list).toEqual(mockList);
 
     // addToList
