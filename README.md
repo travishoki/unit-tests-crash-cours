@@ -11,9 +11,9 @@ Lots of clumsy mistakes in this code, let's fix them up!
 1. Switch to Node 10+
    `nvm use`
 2. Install
-   `npm i`
+   `yarn install`
 3. Jest Tests
-   `npm run test`
+   `yarn test`
 4. Press `p` to filter by a filename regex pattern
 5. Begin typing the component name: `src/1`
 6. Arrow down to the section "Pattern matches 1 file", hit enter on the desired file
@@ -49,7 +49,7 @@ Lots of clumsy mistakes in this code, let's fix them up!
 1. Stop running tests
    `ctrl + c`
 2. Re-run tests with coverage
-   `npm run test:coverage`
+   `yarn test:coverage`
 
 - Add the tests for full line coverage
 
