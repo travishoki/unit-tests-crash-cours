@@ -6,7 +6,7 @@ Task:
 - Fix the failed unit test
 */
 describe("ComponentA", () => {
-  it("Should render component successfully", () => {
+  it("should render component successfully", () => {
     const props = {
       isVisible: true,
     };
@@ -15,13 +15,13 @@ describe("ComponentA", () => {
     expect(wrapper.isEmptyRender()).toBe();
   });
 
-  it("Should render empty", () => {
+  it("should render empty", () => {
     const wrapper = shallow(<ComponentA />);
 
     expect(wrapper.isEmptyRender()).toBe();
   });
 
-  it("Should verify the rendered text of the component", () => {
+  it("should verify the rendered text of the component", () => {
     const props = {
       isVisible: true,
     };

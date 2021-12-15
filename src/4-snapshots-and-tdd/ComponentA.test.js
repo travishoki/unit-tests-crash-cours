@@ -5,7 +5,7 @@ import toJson from "enzyme-to-json";
 import { CHARACTER_LIST } from "./constants";
 
 describe("ComponentA", () => {
-  it("Should render only a list of Jedi", () => {
+  it("should render only a list of Jedi", () => {
     const props = {
       list: CHARACTER_LIST,
     };
