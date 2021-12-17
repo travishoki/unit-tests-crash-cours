@@ -1,4 +1,5 @@
 import { useState } from "react";
+
 import useQueryCharacters from "./useQueryCharacters";
 
 const useList = () => {

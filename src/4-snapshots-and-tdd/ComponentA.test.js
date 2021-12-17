@@ -1,7 +1,7 @@
-import { ComponentA } from "./ComponentA";
 import { shallow } from "enzyme";
 import toJson from "enzyme-to-json";
 
+import { ComponentA } from "./ComponentA";
 import { CHARACTER_LIST } from "./constants";
 
 describe("ComponentA", () => {

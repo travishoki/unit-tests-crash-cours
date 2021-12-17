@@ -1,6 +1,7 @@
-import { ComponentA } from "./ComponentA";
 import { shallow } from "enzyme";
 import sinon from "sinon";
+
+import { ComponentA } from "./ComponentA";
 
 /*
 Task:
