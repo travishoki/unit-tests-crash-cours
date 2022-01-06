@@ -40,7 +40,7 @@ Lots of clumsy mistakes in this code, let's fix them up!
 - Use a testable pure function to filter
 - Fix the failed unit test
 
-### 5-sinon-simulate-click:
+### 5-simulate-click:
 
 - Fix the failed unit tests
 
@@ -71,11 +71,6 @@ Delightful JavaScript Testing
 
 https://jestjs.io/docs/expect
 When you're writing tests, you often need to check that values meet certain conditions. expect gives you access to a number of "matchers" that let you validate different things.
-
-### Sinon:
-
-https://www.npmjs.com/package/sinon
-Standalone and test framework agnostic JavaScript test spies, stubs and mocks
 
 ---
 
