@@ -9,17 +9,17 @@ Task:
 describe("ComponentA", () => {
   it("should render component successfully", () => {
     const props = {
-      isVisible: true,
+      isVisible: false,
     };
-    const wrapper = render(<ComponentA {...props} />);
+    const { container } = render(<ComponentA {...props} />);
 
-    expect(wrapper).toBeEmptyDOMElement();
+    expect(container).not.toBeEmptyDOMElement();
   });
 
   it("should render empty", () => {
-    const wrapper = render(<ComponentA />);
+    const { container } = render(<ComponentA />);
 
-    expect(wrapper).toBeEmptyDOMElement();
+    expect(container).not.toBeEmptyDOMElement();
   });
 
   it("should verify the rendered text of the component", () => {
