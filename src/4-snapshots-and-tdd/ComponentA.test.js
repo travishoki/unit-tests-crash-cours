@@ -8,21 +8,19 @@ describe("ComponentA", () => {
     const props = {
       list: CHARACTER_LIST,
     };
-    const wrapper = render(<ComponentA {...props} />);
+    const { container } = render(<ComponentA {...props} />);
 
-    expect(wrapper).toMatchInlineSnapshot(`
-    <ul>
-      <li
-        key="0"
-      >
-        Luke Skywalker
-      </li>
-      <li
-        key="1"
-      >
-        Obi-wan Kenobi
-      </li>
-    </ul>
+    expect(container).toMatchInlineSnapshot(`
+    <div>
+      <ul>
+        <li>
+          Luke Skywalker
+        </li>
+        <li>
+          Obi-wan Kenobi
+        </li>
+      </ul>
+    </div>
   `);
   });
 });

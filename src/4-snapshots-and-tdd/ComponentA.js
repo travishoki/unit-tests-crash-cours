@@ -1,8 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import { TYPES } from "./constants";
-// import { filterOutTypeSith } from './ComponentA.helpers';
+// import { TYPES } from "./constants";
+// import { filterOutTypeSith } from "./ComponentA.helpers";
 
 /*
 Task:
@@ -11,7 +11,7 @@ Task:
 */
 export const ComponentA = ({ list }) => {
   const jedi = list;
-  // const jedi = list.filter(item => item.type !== TYPES.SITH);
+  // const jedi = list.filter((item) => item.type !== TYPES.SITH);
 
   return (
     <ul>
