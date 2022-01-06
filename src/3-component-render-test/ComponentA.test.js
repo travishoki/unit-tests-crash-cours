@@ -1,4 +1,4 @@
-import { shallow } from "enzyme";
+import { render } from "@testing-library/react";
 
 import { ComponentA } from "./ComponentA";
 
@@ -11,24 +11,24 @@ describe("ComponentA", () => {
     const props = {
       isVisible: true,
     };
-    const wrapper = shallow(<ComponentA {...props} />);
+    const wrapper = render(<ComponentA {...props} />);
 
-    expect(wrapper.isEmptyRender()).toBe();
+    expect(wrapper).toBeEmptyDOMElement();
   });
 
   it("should render empty", () => {
-    const wrapper = shallow(<ComponentA />);
+    const wrapper = render(<ComponentA />);
 
-    expect(wrapper.isEmptyRender()).toBe();
+    expect(wrapper).toBeEmptyDOMElement();
   });
 
   it("should verify the rendered text of the component", () => {
     const props = {
       isVisible: true,
     };
-    const wrapper = shallow(<ComponentA {...props} />);
+    const wrapper = render(<ComponentA {...props} />);
 
-    expect(wrapper.find("p")).toHaveLength(2);
-    expect(wrapper.find("p").text()).toEqual("Component B");
+    expect(wrapper.getBy("p")).toHaveLength(2);
+    expect(wrapper.getBy("p").text()).toEqual("Component B");
   });
 });

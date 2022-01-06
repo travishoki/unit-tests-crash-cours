@@ -72,21 +72,6 @@ Delightful JavaScript Testing
 https://jestjs.io/docs/expect
 When you're writing tests, you often need to check that values meet certain conditions. expect gives you access to a number of "matchers" that let you validate different things.
 
-### Enzyme:
-
-https://www.npmjs.com/package/enzyme
-Enzyme is a JavaScript Testing utility for React that makes it easier to test your React Components' output. You can also manipulate, traverse, and in some ways simulate runtime given the output.
-
-### Enzyme - Shallow Rendering API
-
-https://github.com/enzymejs/enzyme/blob/HEAD/docs/api/shallow.md
-Shallow rendering is useful to constrain yourself to testing a component as a unit, and to ensure that your tests aren't indirectly asserting on behavior of child components.
-
-## Enzyme - enzyme-to-json
-
-https://www.npmjs.com/package/enzyme-to-json
-Convert Enzyme wrappers to a format compatible with Jest snapshot testing.
-
 ### Sinon:
 
 https://www.npmjs.com/package/sinon

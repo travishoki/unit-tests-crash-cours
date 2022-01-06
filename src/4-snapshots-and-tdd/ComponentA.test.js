@@ -1,5 +1,4 @@
-import { shallow } from "enzyme";
-import toJson from "enzyme-to-json";
+import { render } from "@testing-library/react";
 
 import { ComponentA } from "./ComponentA";
 import { CHARACTER_LIST } from "./constants";
@@ -9,9 +8,9 @@ describe("ComponentA", () => {
     const props = {
       list: CHARACTER_LIST,
     };
-    const wrapper = shallow(<ComponentA {...props} />);
+    const wrapper = render(<ComponentA {...props} />);
 
-    expect(toJson(wrapper)).toMatchInlineSnapshot(`
+    expect(wrapper).toMatchInlineSnapshot(`
     <ul>
       <li
         key="0"

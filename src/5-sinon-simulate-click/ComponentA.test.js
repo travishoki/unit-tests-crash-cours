@@ -1,4 +1,4 @@
-import { shallow } from "enzyme";
+import { render } from "@testing-library/react";
 import sinon from "sinon";
 
 import { ComponentA } from "./ComponentA";
@@ -14,7 +14,7 @@ describe("ComponentA render", () => {
       handleClick: () => {},
       value: "foo",
     };
-    const wrapper = shallow(<ComponentA {...props} />);
+    const wrapper = render(<ComponentA {...props} />);
     const submitButton = wrapper.find(".button");
 
     submitButton.simulate("click");
