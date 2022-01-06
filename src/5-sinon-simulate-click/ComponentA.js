@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 export const ComponentA = ({ handleClick, value }) => (
-  <button onClick={() => handleClick(value)} className="button">
+  <button onClick={() => handleClick(value)} role="button">
     Click Me!
   </button>
 );

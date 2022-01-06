@@ -1,5 +1,4 @@
-import { render } from "@testing-library/react";
-import sinon from "sinon";
+import { fireEvent, render, screen } from "@testing-library/react";
 
 import { ComponentA } from "./ComponentA";
 
@@ -9,19 +8,16 @@ Task:
 */
 describe("ComponentA render", () => {
   it("ComponentA render - simulate click", () => {
-    const handleClickSpy = sinon.spy();
+    const handleClickSpy = jest.fn();
     const props = {
-      handleClick: () => {},
+      handleClick: handleClickSpy,
       value: "foo",
     };
-    const wrapper = render(<ComponentA {...props} />);
-    const submitButton = wrapper.find(".button");
+    render(<ComponentA {...props} />);
+    const submitButton = screen.getByRole("button");
 
-    submitButton.simulate("click");
+    // fireEvent.click(submitButton);
 
-    expect(submitButton).toHaveLength(2);
-    expect(wrapper.isEmptyRender()).toBe(true);
-    expect(handleClickSpy.called).toBe(true);
-    expect(handleClickSpy.calledWith("bar")).toBe(true);
+    expect(handleClickSpy).toHaveBeenCalledTimes(1);
   });
 });
