@@ -1,4 +1,4 @@
-import { render } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 
 import { ComponentA } from "./ComponentA";
 
@@ -26,9 +26,8 @@ describe("ComponentA", () => {
     const props = {
       isVisible: true,
     };
-    const wrapper = render(<ComponentA {...props} />);
+    render(<ComponentA {...props} />);
 
-    expect(wrapper.getBy("p")).toHaveLength(2);
-    expect(wrapper.getBy("p").text()).toEqual("Component B");
+    expect(screen.getByText("Component B")).toBeTruthy();
   });
 });
