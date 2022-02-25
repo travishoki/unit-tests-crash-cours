@@ -6,6 +6,6 @@ describe("useQueryCharacters", () => {
   it("useQueryCharacters", () => {
     const result = renderHook(() => useQueryCharacters()).result.current;
 
-    expect(result).toEqual(null);
+    expect(result).toBe(null);
   });
 });
