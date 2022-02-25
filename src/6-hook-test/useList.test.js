@@ -38,8 +38,8 @@ describe("useList", () => {
     });
 
     expect(hookResult.result.current.list.includes("Yoshi")).toBe(false);
-    expect(hookResult.result.current.list.includes("Mario")).toBe(false);
-    expect(hookResult.result.current.list.includes("Luigi")).toBe(false);
+    expect(hookResult.result.current.list.includes("Mario")).toBe(true);
+    expect(hookResult.result.current.list.includes("Luigi")).toBe(true);
     */
   });
 });
