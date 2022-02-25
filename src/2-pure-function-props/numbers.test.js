@@ -13,7 +13,7 @@ describe("numbers - sum", () => {
   });
 
   it("should throw an error for undefined props", () => {
-    expect(sum).toThrow("num1 prop undefined");
+    expect(() => sum()).toThrow("num1 prop undefined");
   });
 
   it("should throw an error for prop num2 being undefined", () => {
