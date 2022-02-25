@@ -14,5 +14,3 @@ ComponentA.propTypes = {
 ComponentA.defaultProps = {
   isVisible: false,
 };
-
-export default ComponentA;
