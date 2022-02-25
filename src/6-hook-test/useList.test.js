@@ -22,7 +22,7 @@ describe("useList", () => {
 
   it("useList", () => {
     // list
-    expect(hookResult.result.current.list).toEqual();
+    expect(hookResult.result.current.list).toEqual(["Mario"]);
 
     /*
     // addToList
