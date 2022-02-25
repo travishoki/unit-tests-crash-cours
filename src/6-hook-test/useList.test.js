@@ -34,10 +34,12 @@ describe("useList", () => {
 
     // deleteFromList
     TestRenderer.act(() => {
-      hookResult.result.current.deleteFromList("Bowser");
+      hookResult.result.current.deleteFromList("Yoshi");
     });
 
-    expect(hookResult.result.current.list.includes("Bowser")).toBe(false);
+    expect(hookResult.result.current.list.includes("Yoshi")).toBe(false);
+    expect(hookResult.result.current.list.includes("Mario")).toBe(false);
+    expect(hookResult.result.current.list.includes("Luigi")).toBe(false);
     */
   });
 });
