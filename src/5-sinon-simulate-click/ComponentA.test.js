@@ -19,5 +19,6 @@ describe("ComponentA render", () => {
     // fireEvent.click(submitButton);
 
     expect(handleClickSpy).toHaveBeenCalledTimes(1);
+    // expect(handleClickSpy).toHaveBeenCalledWith("bar");
   });
 });
