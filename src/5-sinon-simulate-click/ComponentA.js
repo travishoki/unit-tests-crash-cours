@@ -9,5 +9,3 @@ ComponentA.propTypes = {
   handleClick: PropTypes.func,
   value: PropTypes.string,
 };
-
-export default ComponentA;
