@@ -29,5 +29,3 @@ ComponentA.propTypes = {
 ComponentA.defaultProps = {
   list: [],
 };
-
-export default ComponentA;
