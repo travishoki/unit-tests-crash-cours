@@ -10,14 +10,14 @@ export const useList = () => {
     setList([...list, item]);
   };
 
-  const deleteToList = (itemToDelete) => {
+  const deleteFromList = (itemToDelete) => {
     const newList = list.filter((item) => item !== itemToDelete);
     setList(newList);
   };
 
   return {
     addToList,
-    deleteToList,
+    deleteFromList,
     list,
   };
 };

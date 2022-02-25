@@ -32,9 +32,9 @@ describe("useList", () => {
 
     expect(hookResult.result.current.list.includes("Luigi")).toBe(true);
 
-    // deleteToList
+    // deleteFromList
     TestRenderer.act(() => {
-      hookResult.result.current.deleteToList("Bowser");
+      hookResult.result.current.deleteFromList("Bowser");
     });
 
     expect(hookResult.result.current.list.includes("Bowser")).toBe(false);
