@@ -1,8 +1,8 @@
 import { renderHook } from "@testing-library/react-hooks";
 // import TestRenderer from "react-test-renderer";
 
-import useList from "./useList";
-import useQueryCharacters from "./useQueryCharacters";
+import { useList } from "./useList";
+import { useQueryCharacters } from "./useQueryCharacters";
 
 jest.mock("./useQueryCharacters");
 

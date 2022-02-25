@@ -1,5 +1,3 @@
-const useQueryCharacters = () => {
+export const useQueryCharacters = () => {
   return null;
 };
-
-export default useQueryCharacters;

@@ -1,6 +1,6 @@
 import { renderHook } from "@testing-library/react-hooks";
 
-import useQueryCharacters from "./useQueryCharacters";
+import { useQueryCharacters } from "./useQueryCharacters";
 
 describe("useQueryCharacters", () => {
   it("useQueryCharacters", () => {

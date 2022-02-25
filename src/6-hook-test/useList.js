@@ -1,8 +1,8 @@
 import { useState } from "react";
 
-import useQueryCharacters from "./useQueryCharacters";
+import { useQueryCharacters } from "./useQueryCharacters";
 
-const useList = () => {
+export const useList = () => {
   const initiList = useQueryCharacters();
   const [list, setList] = useState(initiList);
 
@@ -21,5 +21,3 @@ const useList = () => {
     list,
   };
 };
-
-export default useList;
