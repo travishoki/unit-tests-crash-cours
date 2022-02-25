@@ -26,7 +26,7 @@ Lots of clumsy mistakes in this code, let's fix them up!
 
 - Fix the failed unit test
 
-### 2-pure-funciton-props:
+### 2-pure-function-props:
 
 - Throw error for undefined props
 
